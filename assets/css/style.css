@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*============================ HEADER ============================ */
+#header {padding:0 4.2vw; width:100%; height:96px; position:fixed; top:0; left:0; z-index:999;}
+#header nav {display:flex; justify-content:space-between; align-items:center; height:100%; font-size:2rem;}
+#header ul {display:flex; justify-content:space-between; width:40%; align-items:center;}
+#header .logo_wrap h1 {font-weight:600;}
+
+
+
+/*============================ INTRO ============================ */
+.section__intro {height:100vh; display:flex; justify-content:center; flex-direction:column;}
+.section__intro .deco {filter:blur(var(--blur-amount)); position:absolute; z-index:1; border-radius:100%;}
+.section__intro .deco:nth-child(1) {background-color:#4fc775; width:calc(var(--blur-1-size)); height:var(--blur-1-size);}
+.section__intro .deco:nth-child(2) {background-color:#3e77e9; width:calc(var(--blur-2-size)); height:var(--blur-2-size);}
+.section__intro .deco:nth-child(3) {background-color:#ffd656; width:calc(var(--blur-3-size)); height:var(--blur-3-size);}
+.section__intro .wrap {z-index:2;}
+.section__intro h2 {font-size:clamp(6rem, 8vw, 8rem); font-weight:700;}
+.section__intro .text {margin-top:6rem; font-size:clamp(1.8rem, 2vw, 2rem)}
+
+
+/*============================ ABOUT ME ============================ */
+.section__about {border:1px solid red;}
+.section__about .profile {border:1px solid blue; display:flex; gap:2%;}
+.section__about .profile .img_wrap {width:30%; border:1px solid #000;}
+.section__about .profile .text ~ .text {margin-top:2rem;}
+.section__about .profile .link {display:inline-block; margin-top:4rem;}
+
+.section__about .cont_wrap {display:flex; gap:10%; margin-top:8rem;}
+.section__about .cont_wrap ul {margin-top:2.4rem;}
+.section__about .cont_wrap li {font-size:1.8rem;}
+.section__about .cont_wrap li ~ li {margin-top:1.2rem;}
+.section__about .cont_wrap li .date {color:var(--sub-font-color); width:16.5rem; display:inline-block;}
