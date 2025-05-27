@@ -86,6 +86,7 @@ div {
 }
 
 div[class^="section__"] {position:relative; padding:0 4.2vw;}
+
 .section__title {font-size:4rem; font-weight:700;}
 .section__title + div {margin-top:6rem;}
 .sub__title {font-size:clamp(2rem, 2.8vw, 2.8rem); font-weight:700;}

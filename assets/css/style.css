@@ -31,3 +31,7 @@
 .section__about .cont_wrap li {font-size:1.8rem;}
 .section__about .cont_wrap li ~ li {margin-top:1.2rem;}
 .section__about .cont_wrap li .date {color:var(--sub-font-color); width:16.5rem; display:inline-block;}
+
+.section__about .skill {border:1px solid red; display:flex; justify-content:space-around;  gap:var(--gap); margin-top:5vw;}
+.section__about .skill .img_wrap {width:6.5rem;}
+.section__about .skill .img_wrap img {display:block; width:100%;}
