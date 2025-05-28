@@ -80,13 +80,7 @@ div {
 .mb80 {margin-bottom: 8rem !important;}
 
 
-.container-md{
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-div[class^="section__"] {position:relative; padding:5vw 4.2vw;}
+div[class^="section__"] {position:relative; padding:5vw 6vw;}
 
 .section__title {font-size:4rem; font-weight:700;}
 .section__title + div {margin-top:6rem;}
