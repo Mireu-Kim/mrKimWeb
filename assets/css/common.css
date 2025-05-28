@@ -7,9 +7,9 @@
 
 
 :root {
-    --font-color: #333;
-    --sub-font-color: #666;
-    --point-color: #645be7;
+    --font-color: #fff;
+    --sub-font-color: #999;
+    --point-color: #20c997;
     --blur-1-size: clamp(400px, 60vw, 60vw);
     --blur-2-size: clamp(300px, 40vw, 40vw);
     --blur-3-size: clamp(100px, 10vw, 10vw);
@@ -22,12 +22,12 @@
 }
 
 ::selection {
-    background: #9891f9;
+    background: #20c997;
     color: #e9e8fa !important;
 }
 
 ::-moz-selection {
-    background: #9891f9;
+    background: #20c997;
     color: #e9e8fa !important;
 }
 
@@ -41,6 +41,7 @@ html, body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    background-color:#111;
 }
 
 body {font-size:1.6rem;}
@@ -85,7 +86,7 @@ div {
     margin: 0 auto;
 }
 
-div[class^="section__"] {position:relative; padding:0 4.2vw;}
+div[class^="section__"] {position:relative; padding:5vw 4.2vw;}
 
 .section__title {font-size:4rem; font-weight:700;}
 .section__title + div {margin-top:6rem;}

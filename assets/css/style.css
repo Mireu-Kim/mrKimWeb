@@ -20,9 +20,9 @@
 
 
 /*============================ ABOUT ME ============================ */
-.section__about {border:1px solid red;}
-.section__about .profile {border:1px solid blue; display:flex; gap:2%;}
-.section__about .profile .img_wrap {width:30%; border:1px solid #000;}
+.section__about {}
+.section__about .profile {display:flex; gap:2%;}
+.section__about .profile .img_wrap {width:30%;}
 .section__about .profile .text ~ .text {margin-top:2rem;}
 .section__about .profile .link {display:inline-block; margin-top:4rem;}
 
@@ -32,6 +32,15 @@
 .section__about .cont_wrap li ~ li {margin-top:1.2rem;}
 .section__about .cont_wrap li .date {color:var(--sub-font-color); width:16.5rem; display:inline-block;}
 
-.section__about .skill {border:1px solid red; display:flex; justify-content:space-around;  gap:var(--gap); margin-top:5vw;}
-.section__about .skill .img_wrap {width:6.5rem;}
-.section__about .skill .img_wrap img {display:block; width:100%;}
+.section__about .skill {display:flex; justify-content:space-around;  gap:var(--gap); margin-top:5vw;}
+.section__about .skill li {width:6.5rem;}
+.section__about .skill li img {display:block; width:100%;}
+
+.section__work {background-color:#292929;}
+.section__work ul {display:flex; flex-wrap:wrap; gap:2%;}
+.section__work li {width:31%;}
+.section__work li .text_wrap {margin-top:2rem;}
+.section__work li .hash {color:var(--point-color); font-size:1.6rem;}
+.section__work li .title {font-size:2.4rem; font-weight:700;}
+.section__work li .date {font-size:2rem; color:var(--sub-font-color);}
+.section__work li img {display:block; width:100%; border-radius:20px; box-shadow:3px 0 7px rgb(108 108 108 / 10%);}
