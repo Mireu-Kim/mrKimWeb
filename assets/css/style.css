@@ -22,10 +22,15 @@
 /*============================ ABOUT ME ============================ */
 .section__about {}
 .section__about .profile {display:flex; gap:2%;}
-.section__about .profile .img_wrap {width:30%;}
 .section__about .profile .img_wrap img {display:block; width:100%;}
 .section__about .profile .text ~ .text {margin-top:2rem;}
 .section__about .profile .link {display:inline-block; margin-top:4rem;}
+
+.section__about .skill_wrap {margin-top:8rem;}
+.section__about .skill_wrap ul {display:flex; gap:3%;}
+.section__about .skill_wrap ul li {position:relative;}
+.section__about .skill_wrap ul li img {width:100%; display:block;}
+.section__about .skill_wrap ul li span {position:absolute; display:block; text-align:center; border:1px solid var(--point-color); color:var(--point-color); bottom:-2rem; left:0; width:100%; padding:0 1rem; font-size:1.4rem; font-weight:600;}
 
 .section__about .cont_wrap {display:flex; gap:10%; margin-top:8rem;}
 .section__about .cont_wrap ul {margin-top:2.4rem;}
@@ -33,7 +38,7 @@
 .section__about .cont_wrap li ~ li {margin-top:1.2rem;}
 .section__about .cont_wrap li .date {color:var(--sub-font-color); width:16.5rem; display:inline-block;}
 
-.section__about .skill {display:flex; justify-content:flex-start; gap:var(--gap); margin:8rem -4.2vw 0  -4.2vw; animation:scroll-x var(--duration) linear infinite;}
+/* .section__about .skill {display:flex; justify-content:flex-start; gap:var(--gap); margin:8rem -4.2vw 0  -4.2vw; animation:scroll-x var(--duration) linear infinite;}
 @keyframes scroll-x {
 	0% {
 		transform:translateX(var(--scroll-start));
@@ -43,7 +48,7 @@
 	}
 }
 .section__about .skill li {width:10rem; flex-shrink:0;}
-.section__about .skill li img {display:block; width:100%;}
+.section__about .skill li img {display:block; width:100%;} */
 
 
 
