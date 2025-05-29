@@ -21,16 +21,19 @@
 
 /*============================ ABOUT ME ============================ */
 .section__about {}
-.section__about .profile {display:flex; gap:2%;}
+.section__about .profile {display:flex; gap:10%;}
 .section__about .profile .img_wrap img {display:block; width:100%;}
 .section__about .profile .text ~ .text {margin-top:2rem;}
-.section__about .profile .link {display:inline-block; margin-top:4rem;}
+.section__about .profile .link {display:inline-block; position:relative; margin-top:4rem; padding-right:2.4rem; font-size:1.8rem; color:var(--point-color); transition:0.5s;}
+.section__about .profile .link:hover {margin-left:1rem; opacity:0.5;}
+.section__about .profile .link::after {content:""; position:absolute; top:0.2rem; right:0; padding:0.2rem; border-radius:50%; background: var(--point-color) url(../images/ico_arrow_right.svg) no-repeat center / 1.6rem; width:1.6rem; height:1.6rem;}
 
 .section__about .skill_wrap {margin-top:8rem;}
-.section__about .skill_wrap ul {display:flex; gap:3%;}
-.section__about .skill_wrap ul li {position:relative;}
+.section__about .skill_wrap ul {display:flex; justify-content:space-between; align-items:center; gap:6%; margin-top:2.4rem;}
+.section__about .skill_wrap ul li {flex-shrink:0; position:relative; width:5rem; transition:0.3s;}
+.section__about .skill_wrap ul li:hover span {display:inline-block;}
 .section__about .skill_wrap ul li img {width:100%; display:block;}
-.section__about .skill_wrap ul li span {position:absolute; display:block; text-align:center; border:1px solid var(--point-color); color:var(--point-color); bottom:-2rem; left:0; width:100%; padding:0 1rem; font-size:1.4rem; font-weight:600;}
+.section__about .skill_wrap ul li span {display:none; position:absolute; bottom:-1rem; left:50%;transform:translate(-50%, 100%); border:1px solid var(--point-color); color:var(--point-color); padding:0.4rem 1rem; font-size:1.4rem; font-weight:600; transition:0.3s;}
 
 .section__about .cont_wrap {display:flex; gap:10%; margin-top:8rem;}
 .section__about .cont_wrap ul {margin-top:2.4rem;}
@@ -38,27 +41,14 @@
 .section__about .cont_wrap li ~ li {margin-top:1.2rem;}
 .section__about .cont_wrap li .date {color:var(--sub-font-color); width:16.5rem; display:inline-block;}
 
-/* .section__about .skill {display:flex; justify-content:flex-start; gap:var(--gap); margin:8rem -4.2vw 0  -4.2vw; animation:scroll-x var(--duration) linear infinite;}
-@keyframes scroll-x {
-	0% {
-		transform:translateX(var(--scroll-start));
-	}
-	100% {
-		transform:translateX(var(--scroll-end));
-	}
-}
-.section__about .skill li {width:10rem; flex-shrink:0;}
-.section__about .skill li img {display:block; width:100%;} */
-
-
 
 /*============================ WORK ============================ */
 
-.section__work {background: #292929 url(../images/bg_text.png) no-repeat fixed center}
+.section__work {background: #292929 url(../images/bg_text.png) no-repeat fixed center;}
 .section__work ul {display:flex; flex-wrap:wrap;}
-.section__work li {width:calc((100% - 6rem) / 3); margin-right:3rem;}
-.section__work li:nth-child(n+4) {margin-top:6rem;}
-.section__work li:nth-child(3n) {margin-right:0;}
+.section__work li {width:calc((100% - 9rem) / 4); margin-right:3rem;}
+.section__work li:nth-child(n+5) {margin-top:6rem;}
+.section__work li:nth-child(4n) {margin-right:0;}
 
 .section__work li a {display:block;}
 .section__work li .img_wrap {border-radius:20px;  overflow:hidden;}
