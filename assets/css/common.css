@@ -1,19 +1,9 @@
 @charset "UTF-8";
 
-/*
- * Version : 1.0
- * Date : 2024-07
- */
-
-
 :root {
     --font-color: #fff;
     --sub-font-color: #999;
     --point-color: #20c997;
-    --blur-1-size: clamp(400px, 60vw, 60vw);
-    --blur-2-size: clamp(300px, 40vw, 40vw);
-    --blur-3-size: clamp(100px, 10vw, 10vw);
-    --blur-amount: clamp(40px, 5vw, 90px);
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
     --gap: calc(var(--size) / 14);
     --duration: 60s;
@@ -42,6 +32,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     background-color:#111;
+    scroll-behavior: smooth;
 }
 
 body {font-size:1.6rem;}
@@ -83,8 +74,27 @@ div {
 div[class^="section__"] {position:relative; padding:5vw 6vw;}
 
 .section__title {font-size:4rem; font-weight:700;}
-.section__title + div {margin-top:6rem;}
+.section__title + * {margin-top:6rem;}
 .sub__title {font-size:clamp(2rem, 2.8vw, 2.8rem); font-weight:700;}
 
 .btn_top {position:fixed; bottom:6rem; right:3.2rem; width:4rem; height:4rem; border:1px solid #fff; background:#111 url(../images/ico_arrow_top.svg) no-repeat center center / 2rem;}
-.btn_top:hover {border:1px solid var(--point-color);  background:url(../images/ico_arrow_top_green.svg) no-repeat center center / 2rem;;}
+.btn_top:hover {border:1px solid var(--point-color);  background:url(../images/ico_arrow_top_green.svg) no-repeat center center / 2rem;}
+
+
+
+.scroll-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.scroll-text.up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-text.down {
+  opacity: 1;
+  transform: translateY(10px); /* 내려가는 느낌 */
+}
