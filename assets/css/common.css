@@ -71,14 +71,18 @@ div {
 .mb80 {margin-bottom: 8rem !important;}
 
 
-div[class^="section__"] {position:relative; padding:5vw 6vw;}
+div[class^="section__"]:not(.section__work) {position:relative; max-width:1440px; margin:0 auto; padding:8rem 2rem;}
 
 .section__title {font-size:4rem; font-weight:700;}
 .section__title + * {margin-top:6rem;}
-.sub__title {font-size:clamp(2rem, 2.8vw, 2.8rem); font-weight:700;}
+.sub__title {font-size:2rem; font-weight:700;}
 
 .btn_top {position:fixed; bottom:6rem; right:3.2rem; width:4rem; height:4rem; border:1px solid #fff; background:#111 url(../images/ico_arrow_top.svg) no-repeat center center / 2rem;}
 .btn_top:hover {border:1px solid var(--point-color);  background:url(../images/ico_arrow_top_green.svg) no-repeat center center / 2rem;}
 
 .scroll_text {opacity: 0; transform: translateY(50px); transition: all 0.6s ease;}
 .scroll_text.show {opacity: 1; transform: translateY(0);}
+
+.link {display:inline-block; position:relative; margin-top:4rem; padding-right:2.4rem; font-size:1.8rem; color:var(--point-color); transition:0.5s;}
+.link:hover {margin-left:1rem; opacity:0.5;}
+.link::after {content:""; position:absolute; top:0.2rem; right:0; padding:0.2rem; border-radius:50%; background: var(--point-color) url(../images/ico_arrow_right.svg) no-repeat center / 1.6rem; width:1.6rem; height:1.6rem;}
