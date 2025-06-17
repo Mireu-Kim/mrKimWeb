@@ -27,10 +27,9 @@
 
 
 /*============================ ABOUT ME ============================ */
-.section__about {}
 .section__about .profile {display:flex; gap:10%;}
 .section__about .profile .img_wrap {flex:3;}
-.section__about .profile .text_wrap {flex:7;}
+.section__about .profile .text_wrap {flex:7; word-break:keep-all;}
 .section__about .profile .img_wrap img {display:block; width:100%;}
 .section__about .profile .text {font-size:1.8rem;}
 .section__about .profile .text ~ .text {margin-top:2rem;}
