@@ -9,36 +9,59 @@
 
 #header.on {box-shadow:0 0.5rem 1rem 0 #000; background-color:rgba(34, 34, 34, 0.98);}
 
+@media only screen and (max-width:767px){
+	#header ul {display:none;}
+}
 
 
 /*============================ INTRO ============================ */
 .section__intro {height:100vh; display:flex; justify-content:center; flex-direction:column;}
 .section__intro .wrap {z-index:2;}
 .section__intro h2 {font-size:6rem; font-weight:700;}
-.section__intro .text {margin-top:6rem; font-size:1.8rem;}
+.section__intro .text {margin-top:6rem; font-size:1.8rem; word-break:keep-all;}
+
+@media only screen and (max-width:767px){
+	.section__intro h2 {font-size:4.8rem;}
+	.section__intro .text {margin-top:6rem; font-size:1.6rem;}
+}
 
 
 /*============================ ABOUT ME ============================ */
 .section__about {}
 .section__about .profile {display:flex; gap:10%;}
+.section__about .profile .img_wrap {flex:3;}
+.section__about .profile .text_wrap {flex:7;}
 .section__about .profile .img_wrap img {display:block; width:100%;}
-.section__about .profile .text_wrap {width:50%;}
 .section__about .profile .text {font-size:1.8rem;}
 .section__about .profile .text ~ .text {margin-top:2rem;}
 
 .section__about .skill_wrap {margin-top:8rem;}
-.section__about .skill_wrap ul {margin-top:2.4rem;}
-.section__about .skill_wrap ul li {display:inline-block; position:relative; width:5rem; transition:0.3s;}
-.section__about .skill_wrap ul li ~ li {margin-left:2rem;}
+.section__about .skill_wrap ul {margin-top:2.4rem; display:flex; flex-wrap:wrap; gap:2rem;}
+.section__about .skill_wrap ul li {position:relative; width:5rem; transition:0.3s;}
 .section__about .skill_wrap ul li:hover span {display:inline-block;}
 .section__about .skill_wrap ul li img {width:100%; display:block;}
 .section__about .skill_wrap ul li span {display:none; position:absolute; bottom:-1rem; left:50%;transform:translate(-50%, 100%); border:1px solid var(--point-color); color:var(--point-color); padding:0.4rem 1rem; font-size:1.4rem; font-weight:600; transition:0.3s;}
 
 .section__about .cont_wrap {display:flex; gap:10%; margin-top:8rem;}
 .section__about .cont_wrap ul {margin-top:2.4rem;}
-.section__about .cont_wrap li {font-size:1.8rem;}
+.section__about .cont_wrap li {font-size:1.8rem; word-break:keep-all;}
 .section__about .cont_wrap li ~ li {margin-top:1.2rem;}
 .section__about .cont_wrap li .date {color:var(--sub-font-color); width:16.5rem; display:inline-block;}
+
+@media only screen and (max-width:767px){
+	.section__about .profile {flex-wrap:wrap;}
+	.section__about .profile .img_wrap {margin:0 auto; flex:none; width:30rem;}
+	.section__about .profile .text_wrap {flex:1 1 100%; margin-top:3.2rem;}
+	.section__about .profile .text {font-size:1.6rem;}
+	.section__about .skill_wrap {margin-top:6rem;}
+	.section__about .skill_wrap ul li {width:4rem;}
+	.section__about .skill_wrap ul li ~ li {margin-left:0;}
+	.section__about .cont_wrap {display:block; margin-top:6rem;}
+	.section__about .cont_wrap .cont ~ .cont {margin-top:4rem;}
+	.section__about .cont_wrap li {font-size:1.6rem;}
+	.section__about .cont_wrap li ~ li {margin-top:2rem;}
+	.section__about .cont_wrap li .date {width:100%; display:inline-block; margin-bottom:0.8rem;}
+}
 
 
 /*============================ WORK ============================ */
@@ -60,6 +83,10 @@
 .section__work li .title {font-size:2.4rem; font-weight:700; margin-top:0.4rem; transition:0.5s;}
 .section__work li a:hover .text_wrap .title {color:var(--point-color);}
 .section__work li .date {font-size:2rem; color:var(--sub-font-color); margin-top:0.4rem;}
+
+@media only screen and (max-width:767px){
+	.section__work ul{}
+}
 
 /*============================ FOOTER ============================ */
 #footer {width:1000px; height:80vh;  margin:0 auto; padding:8rem 2rem; display:flex; flex-direction:column; align-items:center; justify-content:center;}
